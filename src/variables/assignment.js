@@ -9,6 +9,7 @@ firstNumber = 20;
 // TODO: Change the code below so that the tests pass
 const secondNumber = 42 // edit this value
 
+
 // do not edit the exported object.
 module.exports = {
   a: firstNumber,

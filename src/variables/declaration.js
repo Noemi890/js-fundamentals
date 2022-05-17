@@ -17,3 +17,4 @@ module.exports = {
   firstName: firstNameExport,
   age: ageExport
 }
+
