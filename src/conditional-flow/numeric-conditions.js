@@ -18,6 +18,7 @@ function isGreaterThan (num1, num2) {
 
 }
 
+
 // This function should return the lowest number in the passed array
 function findLowest (nums) {
 
