@@ -34,9 +34,19 @@ function numbers(lower, upper) {
 //
 // TODO: write code below
 
+  function exclamation(string, number) {
+
+    let output = string.toUpperCase();
+
+    for (let i = 0; i < number; i++) {
+      output += "!";
+    }
+
+    return output;
+  }
 
 // change the exported value to be the name of the function you defined
 module.exports = {
   a: numbers, // change undefined to be the name of the function defined to create the range of numbers (the first todo)
-  b: undefined // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
+  b: exclamation // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
 }
