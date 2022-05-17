@@ -5,6 +5,10 @@ function isInRange (num, lower, upper) {
 
   // TODO: write code in this function body to pass the tests
 
+  if (num >= lower && num <= upper) {
+    return true
+  }
+
 }
 
 // This function should return true if the passed string is equal
@@ -13,6 +17,10 @@ function isInRange (num, lower, upper) {
 function isHelloOrGoodbye (val1) {
 
   // TODO: write code in this function body to pass the tests
+
+  if (val1 === "Hello" || val1 === "Goodbye") {
+    return true
+  }
 
 }
 

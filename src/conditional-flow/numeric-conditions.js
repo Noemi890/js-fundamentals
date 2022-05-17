@@ -5,12 +5,16 @@ function isArrayEmpty (array) {
 
   // TODO: write code in this function body to pass the tests
 
+  return array.length === 0;
+
 }
 
 // This function should return true if num1 is greater than num2, false otherwise
 function isGreaterThan (num1, num2) {
 
   // TODO: write code in this function body to pass the tests
+
+  return num1 > num2;
 
 }
 
@@ -19,6 +23,20 @@ function findLowest (nums) {
 
   // TODO: write code in this function body to pass the tests
 
+  let lowNum = Infinity;
+
+  for (i = 0; i < nums.length; i++) {
+    for (j = i + 1; j < nums.length; j++) {
+      if (nums[i] < nums[j] && nums[i] < lowNum) {
+        lowNum = nums[i];
+      }
+
+      else if (nums[j] < lowNum) {
+      lowNum = nums[j];
+      }
+    }
+  }
+  return lowNum;
 }
 
 module.exports = {

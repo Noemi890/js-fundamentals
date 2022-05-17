@@ -19,13 +19,15 @@ function sayHelloManyTimes (name, times) {
 // TODO: Add and update code here to make the tests pass
 
 // Set this variable to 'Hello' by calling the sayHello function
-const hello = ''
+const hello = sayHello();
 
 // Set this variable variable to 'Hello Jane' calling the sayHelloTo function
-const helloToJane = ''
+let name = "Jane";
+const helloToJane = sayHelloTo(name);
 
 // Set this variable to 'Hello Bob! Hello Bob! Hello Bob!' calling the sayHelloManyTimes function
-const helloToBob3Times = ''
+name = "Bob";
+const helloToBob3Times = sayHelloManyTimes (name, 3);
 
 // do not edit below this line
 module.exports = {

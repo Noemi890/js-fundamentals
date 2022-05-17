@@ -10,6 +10,18 @@
 //
 // TODO: write code below
 
+function numbers(lower, upper) {
+
+  let arrayNumbers = [];
+
+  for (let i = lower; i <= upper; i++) {
+    arrayNumbers.push(i);
+  }
+
+  return arrayNumbers; 
+}
+
+
 // define a function that takes two arguments: a string and a number.
 // The function should return the same string but in upper case with exclamation
 // marks appended to the end. The number of exclamation marks should be
@@ -22,8 +34,9 @@
 //
 // TODO: write code below
 
+
 // change the exported value to be the name of the function you defined
 module.exports = {
-  a: undefined, // change undefined to be the name of the function defined to create the range of numbers (the first todo)
+  a: numbers, // change undefined to be the name of the function defined to create the range of numbers (the first todo)
   b: undefined // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
 }

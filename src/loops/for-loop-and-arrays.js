@@ -8,17 +8,38 @@ let word = ''
 // Use a for loop to set the sum variable to the sum of all the values in nums
 sum = 0
 
+for (i = 0; i < nums.length; i++) {
+  sum += nums[i];
+}
+
 // Use a for loop to populate doubledNums with every value from nums array doubled (i.e [2, 6, 24, etc...])
 const doubledNums = []
+
+for (i = 0; i < nums.length; i++) {
+  doubledNums.push(nums[i] * 2);
+}
 
 // Use a for loop to set word equal to all the letters in the letters array
 word = ''
 
+for (i = 0; i < letters.length; i++) {
+  word += letters[i];
+}
+
 // Use a for loop to populate everySecondNum with every second number from the nums array
 const everySecondNum = []
 
+for (i = 0; i < nums.length; i++) {
+  if (i % 2 !== 0) {
+    everySecondNum.push(nums[i]);
+  }
+}
 // Use a for loop to populate numsReversed with the numbers from nums in reverse order
 const numsReversed = []
+
+for (i = nums.length -1; i >= 0; i--) {
+  numsReversed.push(nums[i]);
+}
 
 // do not change below this line
 module.exports = {
