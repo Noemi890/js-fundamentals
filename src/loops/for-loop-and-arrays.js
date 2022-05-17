@@ -34,6 +34,7 @@ for (i = 0; i < nums.length; i++) {
     everySecondNum.push(nums[i]);
   }
 }
+
 // Use a for loop to populate numsReversed with the numbers from nums in reverse order
 const numsReversed = []
 
