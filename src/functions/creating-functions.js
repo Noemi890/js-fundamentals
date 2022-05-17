@@ -27,6 +27,7 @@ function smiley (name) {
   return "Hi," + " " + name[0].toUpperCase() + name.substring(1) + " " + ":)";
 }
 
+
 // TODO: change undefined to be the name of the functions you defined
 module.exports = {
   a: numberPlusOne, // change undefined to be the name of the function you defined to increment a number (the first TODO)
