@@ -36,9 +36,13 @@ function hasOddNumberVowels (val1) {
   let vowels = 0;
 
   for (let i = 0; i < val1.length; i++) {
-    if (["a", "e", "i", "o", "u"].includes(val1[i].toLowerCase)) {
+
+    if (["a", "e", "i", "o", "u"].includes(val1[i].toLowerCase())) {
+
       vowels++;
+
     }
+
   }
 
   return vowels % 2 !== 0;
@@ -51,7 +55,15 @@ function hasOddNumberVowels (val1) {
 
 function getMiddleLetter (val1) {
   // TODO: write code in this function body to pass the tests
+  if (val1.length % 2 === 1) {
 
+    return val1.substring((val1.length / 2), (val1.length / 2)+1) 
+  } 
+  
+  else {
+
+      return val1.substring((val1.length / 2)-1, (val1.length / 2)+1)
+  }
 }
 
 // This function should return the name of the season for the provided
@@ -66,6 +78,20 @@ function getMiddleLetter (val1) {
 function seasonForMonth (monthName) {
 
   // TODO: write code in this function body to pass the tests
+  if (monthName === "December" || monthName === "January" || monthName === "February") {
+    return "Winter";
+  }
+  else if (monthName === "March" || monthName === "April" || monthName === "May") {
+    return "Spring";
+  }
+  else if (monthName === "June" || monthName === "July" || monthName === "August") {
+    return "Summer";
+  }
+  else if (monthName === "September" || monthName === "October" || monthName === "November") {
+  return "Autumn";
+  }
+  
+  return "";
 }
 
 module.exports = {
