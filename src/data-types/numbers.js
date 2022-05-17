@@ -24,6 +24,7 @@ const sum = numOnePlusNumTwo + numThree;
 const numBytes = sum / numOne;
 
 // do not edit the exported object.
+
 module.exports = {
   a: numOnePlusNumTwo,
   b: numThreeTimesNumTwo,
